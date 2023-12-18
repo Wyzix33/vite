@@ -1,0 +1,50 @@
+$transparent-black-color: rgba(0, 0, 0, .5)
+$green1-color: rgb(0, 64, 80)
+$green2-color: rgb(0, 48, 64)
+$green3-color: rgb(0, 37, 53)
+$green-color: rgb(0, 53, 69)
+$green4-color: rgb(0, 77, 102)
+$lightgreen-color: rgb(144, 238, 144)
+$white-color: rgb(255, 255, 255)
+$transparent-white50-color: rgba(255, 255, 255, .5)
+$warning-color: rgb(248, 148, 6)
+$error-color: rgb(189, 54, 47)
+$success-color: rgb(81, 163, 81)
+$notice-color: rgb(47, 150, 180)
+$blue3-color: rgb(34, 50, 84)
+@import notify/notify
+
+*
+ box-sizing: border-box
+ margin: 0
+ padding: 0
+*:focus
+ outline: none
+html, body
+ width: 100%
+ height: 100vh
+ margin: 0
+ overflow: hidden
+ body
+  color: #fff
+  background: rgba(94, 110, 220, 0.5)
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto 1fr auto
+
+::-webkit-scrollbar
+ width: 10px
+ height: 10px
+/* Track */
+::-webkit-scrollbar-track
+ box-shadow: inset 0 0 5px rgb(128, 128, 128)
+ border-radius: 10px
+
+/* Handle */
+::-webkit-scrollbar-thumb
+ background: rgba(252, 130, 82, .541)
+ border-radius: 10px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+ background: rgb(245, 127, 48)
